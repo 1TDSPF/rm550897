@@ -71,26 +71,61 @@
 // frutas.push("melão");
 // console.table(frutas);
 
-// //Adicionando um item no inicio do array com o metodo unshift(item);
+// //Adicionado um item no início do array com o método unshift(item);
 // frutas.unshift("melancia");
 // console.table(frutas);
 
-// //Removendo um item do final do array com o metodo pop();
+// //Removendo um item do final do array com o método pop();
+// frutas.pop();
+// console.table(frutas);
+
+// //Removendo um item do inicio do array com o método pop();
 // frutas.shift();
 // console.table(frutas);
 
-// //Removendo um iten do inicio do array com o metodo pop();
-// frutas.shift();
-// console.table(frutas);
+// //Localizando um determinando item dentro do array com o método indexOf(item);
+// // let indice = frutas.indexOf("banana");
+// // console.log("INDICE ONDE FOI LOCALIZADO O ITEM : " + indice);
+// // console.log("ITEM QUE FOI LOCALIZADO NO ARRAY : " + frutas[indice]);
 
-// //Localizando um determinado item dentro do arra com o metodo indexOf(item);
-// //let indice = frutas.indexOf("banana");
-// //console.log("INDICE ONDE FOI LOCALIZADO O ITEM : " + indice);
-// //console.log("ITEM QUE FOI LOCALIZADO NO ARRAY : " +  frutas[indice]);
-
-// //Utilizando os metodos, slice(indiceItem, quantidadeRemocoes) para remover um item do array passando sua localizacao atraves do indice.
-// //Localizando um determinando item dentro do array com o metodo indexOf(item);
+// //Utilizando os métodos, slice(indiceItem, quantidadeRemoções) para remover um item do array passando sua localizaçao através do indice.
+// //Localizando um determinando item dentro do array com o método indexOf(item);
 // let indice = frutas.indexOf("banana");
-// console.log("ITEM QUE ESTAVA NO LOCAL ANTES DA REMOCAO : " + frutas[indice]);
+// console.log("ITEM QUE ESTAVA NO LOCAL ANTES DA REMOÇÃO : " + frutas[indice]);
 // frutas.splice(indice,2);
-// console.log("ITEM QUE FICOU NO LOCAL APOS A REMOCAO : " + frutas[indice])
+// console.table(frutas);
+// console.log("ITEM QUE FICOU NO LOCAL APÓS A REMOÇÃO : " + frutas[indice]);
+
+// let nr1 = [1,2,3,4,5];
+// let nr2 = [6,7,8,9,10];
+// console.log(nr1);
+// console.log(nr2);
+// //CONCATENANDO ARRAYS
+// let nr3 = [nr1,nr2];
+// console.log("NOVO ARRAY : " + nr3);
+// //Imprimindo o Array concatenado com forEach
+// nr3.forEach((nr)=>{
+//     nr.forEach((n)=>{
+//         console.log("ITEM DO NOVO ARRAY : " + n);
+//     })
+// })
+// let nr1 = [1,2,3,4,5];
+// let nr2 = [6,7,8,9,10];
+// console.log(nr1);
+// console.log(nr2);
+// //CONCATENANDO ARRAYS COM O OPERADOR SPREAD( ... )
+// let nr3 = [...nr1,...nr2];
+// // //Imprimindo o Array concatenado com forEach
+// nr3.forEach((nr)=>{
+//     console.log("ITEM DO NOVO ARRAY : " + nr);    
+// });
+
+//convertendo HTMLCollection em Arrays
+const imgElements = document.getElementsByTagName("img");
+console.log(imgElements);
+const imgElementsArray = [...imgElements];
+imgElementsArray.forEach((img)=>{
+    img.setAttribute("width","3%");
+});
+
+
