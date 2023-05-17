@@ -88,7 +88,7 @@
 // // console.log("INDICE ONDE FOI LOCALIZADO O ITEM : " + indice);
 // // console.log("ITEM QUE FOI LOCALIZADO NO ARRAY : " + frutas[indice]);
 
-// //Utilizando os métodos, splice(indiceItem, quantidadeRemoções) para remover um item do array passando sua localizaçao através do indice.
+// //Utilizando os métodos, slice(indiceItem, quantidadeRemoções) para remover um item do array passando sua localizaçao através do indice.
 // //Localizando um determinando item dentro do array com o método indexOf(item);
 // let indice = frutas.indexOf("banana");
 // console.log("ITEM QUE ESTAVA NO LOCAL ANTES DA REMOÇÃO : " + frutas[indice]);
@@ -121,23 +121,22 @@
 // });
 
 //convertendo HTMLCollection em Arrays
-const imgElements = document.getElementsByTagName("img");
-console.log(imgElements);
-const imgElementsArray = [...imgElements];
-imgElementsArray.forEach((img)=>{
-    img.setAttribute("width","3%");
-});
+// const imgElements = document.getElementsByTagName("img");
+// console.log(imgElements);
+// const imgElementsArray = [...imgElements];
+// imgElementsArray.forEach((img)=>{
+//     img.setAttribute("width","3%");
+// });
 
-//Recupere uma colections de elementos do tipo (a).
-// Identifique aqueles que sao pertencentes somente ao cabecalho e adicione o atributo style com a propriedade background-color:#ff0000;
-//Tire um print do codigo e da pagina alterada envie no chat
+//Recupere uma colections de elementos do tipo ( a ).
+// Identifique aqueles que são pertencentes somente ao cabeçalho e adicione o atributo style com a propriedade background-color:#ff0000;
+//Tire um print do código e da página alterada envie no chat!
 
 const aElements = [...document.getElementsByTagName("a")];
 
 aElements.forEach((a)=>{
     let textoDoA = a.textContent;
     if(textoDoA == "Home" || textoDoA == "Info" || textoDoA == "Item-3"){
-        a.setAttribute("style","background-color:#ff0000")
+        a.setAttribute("style","background-color:#ff0000;")
     }
 });
-
