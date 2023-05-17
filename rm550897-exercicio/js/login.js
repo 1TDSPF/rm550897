@@ -1,23 +1,36 @@
-//CRIANDO OBJETOS
-const usuario1 = {
-    usuarioEmail : "jaul@email.com",
-    usuarioSenha : "12345",
-    usuarioGenero : "m",
-    gravarDados : true
-}
-
-const usuario2 = {
-    usuarioEmail : "bkzin@email.com",
-    usuarioSenha : "12345",
-    usuarioGenero : "m",
-    gravarDados : true
-}
 
 //CRIAR UMA LISTA DE OBJETOS
-let listaDeUsuarios = [];
-listaDeUsuarios.push(usuario1);
-listaDeUsuarios.push(usuario2);
-console.log(listaDeUsuarios);
+let listaDeUsuarios = [
+    {
+        nomeCompleto : "Jáu da Selva",
+        usuarioEmail : "jau@email.com",
+        usuarioSenha : "123456"
+    },
+    {
+        nomeCompleto : "Paulo das Couves",
+        usuarioEmail : "paulo@email.com",
+        usuarioSenha : "123456"
+    },
+    {
+        nomeCompleto : "Jose da Silva",
+        usuarioEmail : "ze@email.com",
+        usuarioSenha : "123456"
+    },
+    {
+        nomeCompleto : "Maria do Socorro",
+        usuarioEmail : "emergencia@email.com",
+        usuarioSenha : "123456"
+    },
+    {
+        nomeCompleto : "Andre da silva",
+        usuarioEmail : "Andes@email.com",
+        usuarioSenha : "123456"
+    },
+];
+
+//ADICIONANDO A LISTA DE OBJETOS AO LOCAL-STORAGE
+localStorage.setItem("listaUser", JSON.stringify(listaDeUsuarios));
+
 
 addEventListener("click", (evt)=>{
     
