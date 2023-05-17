@@ -120,3 +120,6 @@ td[colspan], td[rowspan]{
     border-radius: 5px;
 }
 
+.fa-eye{
+    cursos: pointer;
+}
